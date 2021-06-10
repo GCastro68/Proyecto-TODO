@@ -8,8 +8,8 @@ import { crearTodoHtml } from './js/componentes';
 
 export const todoList = new TodoList();
 
-const tarea = new Todo('Aprender JavaScript');
-todoList.nuevoTodo(tarea);
+// todoList.todos.forEach((todo) => crearTodoHtml(todo));
 
-tarea.completado = false;
-crearTodoHtml(tarea);
+//Esto es lo mismo que la línea anterior
+//Esto aplica solo cuando se tiene un argumento
+todoList.todos.forEach(crearTodoHtml);
